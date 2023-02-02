@@ -4,11 +4,96 @@
     <meta charset="UTF-8">
     <title>JavaScript Learning Path</title>
     <meta name="description" content="JavaScript Learning path">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- <link href="design.css" rel="stylesheet"> -->
   </head>
 
   <body>
-    <h1>JavaScript Lern Projekt</h1>
+    <div class="container">
+      <h1>JavaScript Lern Projekt</h1>
+
+      <div class="container text-center">
+        <div class="row">
+
+
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Aufgabe 1</h5>
+                <p id="task-1-text" class="card-text"></p>
+                <div class="mb-3">
+                  <label for="user-input-task-1" class="form-label">Dein Ergebnis</label>
+                  <input type="number" class="form-control" id="user-input-task-1">
+                </div>
+                <button onclick="evalTask1()" type="button" class="btn btn-outline-primary">Abgeben</button>
+                <div id="user-input-task-1-is-correct" class="form-text"></div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Aufgabe 2</h5>
+                <p id="task-2-text" class="card-text"></p>
+                <div class="mb-3">
+                  <label for="user-input-task-2" class="form-label">Dein Ergebnis</label>
+                  <input type="number" class="form-control" id="user-input-task-2">
+                </div>
+                <button onclick="evalTask2()" type="button" class="btn btn-outline-primary">Abgeben</button>
+                <div id="user-input-task-2-is-correct" class="form-text"></div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!-- COPY ME -->
+          <div class="col">
+            <div class="card">
+              
+              <div class="card-body">
+                <!-- CHANGE `Aufgabe 3` -->
+                <h5 class="card-title">Aufgabe 3</h5>
+
+                <!-- CHANGE `task-3-text` to `task-YOUR_NUMBER-text`-->
+                <p id="task-3-text" class="card-text"></p>
+
+                <div class="mb-3">
+
+                  <!-- CHANGE `user-input-task-3` to `user-input-task-YOUR_NUMBER`-->
+                  <label for="user-input-task-3" class="form-label">Dein Ergebnis</label>
+
+                  <!-- CHANGE `user-input-task-3` to `user-input-task-YOUR_NUMBER`-->
+                  <input type="number" class="form-control" id="user-input-task-3">
+                </div>
+                
+                <!-- CHANGE `evalTask()` to `evalTaskYOUR_NUMBER()`-->
+                <button onclick="evalTask3()" type="button" class="btn btn-outline-primary">Abgeben</button>
+                
+                <!-- CHANGE `user-input-task-3-is-correct` to `user-input-task-YOUR_NUMBER-is-correct`-->
+                <div id="user-input-task-3-is-correct" class="form-text"></div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <!-- PASTE ME -->
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="./homework.js"></script>
     <script src="./sample-script.js"></script>
   </body>
 </html>
